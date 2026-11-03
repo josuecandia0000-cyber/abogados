@@ -76,7 +76,7 @@ export default function ContactSection() {
                     href="tel:+524420000000" 
                     className="text-lg font-serif text-white hover:text-[#D4AF37] transition-colors"
                   >
-                    +52 (442) 000 0000
+                    +52 (442) 236 1702
                   </a>
                 </div>
 
@@ -88,7 +88,7 @@ export default function ContactSection() {
                     href="mailto:contacto@gestoriajuridica.com" 
                     className="text-sm font-sans text-gray-300 hover:text-[#D4AF37] transition-colors underline underline-offset-4"
                   >
-                    contacto@gestoriajuridica.com
+                    abogados@gestoriajuridica.org
                   </a>
                 </div>
               </div>
