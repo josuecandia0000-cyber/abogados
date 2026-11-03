@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail'; // NUEVO COMPONENTE
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 // Componente para asegurar que al cambiar de página, volvemos arriba
 function ScrollToTop() {
@@ -34,6 +35,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
+        <ScrollToTopButton />
       </div>
     </Router>
   );
