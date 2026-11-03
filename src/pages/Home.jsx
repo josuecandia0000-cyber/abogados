@@ -60,10 +60,7 @@ export default function Home() {
 
         <motion.div style={{ opacity: opacityHero }} className="relative z-10 w-full max-w-[1400px] mx-auto">
           <FadeIn>
-            <div className="flex items-center gap-6 mb-8">
-              <span className="text-xs font-mono text-[#D4AF37] tracking-[0.5em] uppercase">Gestoría Jurídica Abogados</span>
-              <div className="w-24 h-[1px] bg-[#D4AF37]"></div>
-            </div>
+
             
             <h1 className="text-5xl md:text-7xl lg:text-[95px] font-serif leading-[0.95] tracking-tighter mb-8 uppercase">
               Tu confianza <br />
