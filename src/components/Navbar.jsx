@@ -26,9 +26,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Inicio', path: '/' },
-    { name: 'Áreas de Práctica', path: '/servicios' },
-    { name: 'Nuestra Firma', path: '/firma' },
-    { name: 'Auditoría Legal', path: '/contacto' }, // Cambiamos el nombre para que suene más premium
+    { name: 'Servicios', path: '/servicios' },
+    { name: 'Nosotros', path: '/firma' },
+    { name: 'COntacto', path: '/contacto' }, 
   ];
 
   // Bloquear el scroll cuando el menú está abierto
@@ -56,13 +56,13 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-8 md:px-24 flex justify-between items-center">
           
-          {/* LOGO */}
+          {/* LOGO CON EL NOMBRE OFICIAL */}
           <Link 
             to="/" 
-            className="font-serif font-bold text-2xl tracking-[0.3em] uppercase text-white hover:text-[#D4AF37] transition-colors duration-500 z-[60] relative mix-blend-difference"
+            className="font-serif font-bold text-lg md:text-xl tracking-[0.2em] uppercase text-white hover:text-[#D4AF37] transition-colors duration-500 z-[60] relative"
             onClick={() => setIsOpen(false)}
           >
-            L<span className="text-[#D4AF37]">X</span>C
+            GESTORÍA JURÍDICA <span className="text-[#D4AF37] font-normal text-xs md:text-sm block md:inline tracking-[0.3em]">ABOGADOS</span>
           </Link>
 
           {/* MENÚ DERECHO (Botón Menú + CTA) */}
@@ -71,13 +71,14 @@ export default function Navbar() {
               to="/contacto"
               className="hidden md:inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] font-semibold text-[#D4AF37] hover:text-white transition-colors duration-300"
             >
-              Consulta Privada
+              Aseroria
               <span className="w-8 h-[1px] bg-[#D4AF37]"></span>
             </Link>
 
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className="group flex flex-col items-end justify-center w-8 h-8 focus:outline-none overflow-hidden"
+              aria-label="Menú de navegación"
             >
               {/* Icono de Hamburguesa Animado Personalizado */}
               <motion.span 
@@ -97,7 +98,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* 3. MENÚ FULL-SCREEN (El toque de Alta Costura) */}
+      {/* 3. MENÚ FULL-SCREEN */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 
@@ -124,10 +125,9 @@ export default function Navbar() {
                       onClick={() => setIsOpen(false)}
                       className="group relative inline-block text-4xl md:text-6xl lg:text-7xl font-serif text-gray-500 hover:text-white transition-colors duration-500"
                     >
-                      {/* Efecto de texto relleno al hover (requiere CSS adicional o tailwind custom) */}
                       <span className="relative z-10">{link.name}</span>
                       
-                      {/* Línea que tacha o subraya */}
+                      {/* Línea animada al pasar el cursor */}
                       <span className="absolute left-0 top-1/2 w-0 h-[2px] bg-[#D4AF37] group-hover:w-full transition-all duration-700 ease-in-out transform -translate-y-1/2 opacity-0 group-hover:opacity-100 mix-blend-screen"></span>
                     </Link>
                   </motion.div>
@@ -135,7 +135,7 @@ export default function Navbar() {
               ))}
             </nav>
 
-            {/* Footer interno del menú */}
+            {/* Footer interno del menú (Ajustado a Querétaro) */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -143,10 +143,10 @@ export default function Navbar() {
               className="absolute bottom-12 w-full px-8 md:px-24 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-[0.3em] font-light text-gray-500"
             >
               <div className="flex gap-8">
-                <a href="#" className="hover:text-[#D4AF37] transition-colors">LinkedIn</a>
-                <a href="#" className="hover:text-[#D4AF37] transition-colors">Noticias</a>
+                <a href="https://www.facebook.com/share/1DnAL2YjYi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/gestoriajuridica_?mdxt=dHBjMzloZ21zYWFy" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors">Instagram</a>
               </div>
-              <p>CDMX, México — {new Date().getFullYear()}</p>
+              <p>Santiago de Querétaro, Qro. — {new Date().getFullYear()}</p>
             </motion.div>
           </motion.div>
         )}
