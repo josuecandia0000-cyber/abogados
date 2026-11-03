@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: 'Inicio', path: '/' },
     { name: 'Servicios', path: '/servicios' },
     { name: 'Nosotros', path: '/firma' },
-    { name: 'COntacto', path: '/contacto' }, 
+    { name: 'Contacto', path: '/contacto' }, 
   ];
 
   // Bloquear el scroll cuando el menú está abierto
