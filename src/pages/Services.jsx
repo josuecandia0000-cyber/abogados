@@ -1,178 +1,178 @@
-import React, { useState, useRef } from 'react';
-import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { ArrowUpRight } from 'lucide-react';
 
-// Lista de servicios consolidados con descripciones de élite e imágenes de fondo
 const servicesList = [
   {
     id: '01',
-    title: 'Condominios y Fraccionamientos',
-    desc: 'Estructuración legal, régimen condominal y blindaje para desarrollos inmobiliarios comerciales y residenciales de alto valor.',
+    slug: 'licencias-de-alcohol',
+    category: 'GESTORÍA COMERCIAL',
+    title: 'Licencias de alcohol',
+    shortDesc: 'Obtención, regularización y renovación de licencias comerciales y permisos de alcoholes.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '02',
-    title: 'Póliza Jurídica',
-    desc: 'Mitigación absoluta de riesgos en arrendamientos inmobiliarios, garantizando el patrimonio a través de filtros exhaustivos.',
+    slug: 'licencias-de-funcionamiento',
+    category: 'GESTORÍA COMERCIAL',
+    title: 'Licencias de Funcionamiento y Regularización',
+    shortDesc: 'Apertura, regularización y renovación de licencias comerciales y vistos buenos para negocios sin alcohol.',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '03',
-    title: 'Gestión Notarial',
-    desc: 'Fe pública, protocolización de actas asamblearias y formalización de contratos estructurados a la medida.',
-    image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2024&auto=format&fit=crop'
+    slug: 'derecho-familiar',
+    category: 'DERECHO CIVIL Y FAMILIAR',
+    title: 'Derecho Familiar y Protección Patrimonial',
+    shortDesc: 'Defendemos tus derechos, tu patrimonio y el bienestar de tu familia con sensibilidad jurídica.',
+    image: 'https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '04',
-    title: 'Licencias de Funcionamiento',
-    desc: 'Estrategia gubernamental para la apertura, operatividad y regularización de corporativos e industrias sin contratiempos.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop'
+    slug: 'defensa-civil-patrimonial',
+    category: 'DERECHO CIVIL',
+    title: 'Defensa Civil y Protección Patrimonial',
+    shortDesc: 'Incumplimiento de contratos, arrendamientos y recuperación de bienes inmuebles.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '05',
-    title: 'Protección Civil',
-    desc: 'Auditoría preventiva y cumplimiento estricto de normativas de seguridad estructural, neutralizando clausuras.',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=2070&auto=format&fit=crop'
+    slug: 'derecho-mercantil-cobranza',
+    category: 'DERECHO MERCANTIL',
+    title: 'Cobranza Judicial y Defensa Mercantil',
+    shortDesc: 'Recuperación de adeudos, ejecución de pagarés, títulos de crédito y controversias comerciales.',
+    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '06',
-    title: 'Licencias Municipales y Alcohol',
-    desc: 'Cabildeo ejecutivo y gestión de permisos especializados ante dependencias locales y estatales con máxima agilidad.',
-    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop'
+    slug: 'derecho-penal-defensa',
+    category: 'DERECHO PENAL',
+    title: 'Defensa Penal y Representación Jurídica',
+    shortDesc: 'Estrategia jurídica sólida para la defensa penal, protección de derechos y representación de víctimas.',
+    image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '07',
-    title: 'Derecho Laboral Corporativo',
-    desc: 'Contención de litigios obrero-patronales, diseño de contratos blindados y reestructuración de plantillas.',
-    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=1932&auto=format&fit=crop'
-  }
+    slug: 'derecho-laboral-integral',
+    category: 'DERECHO LABORAL',
+    title: 'Defensa Laboral para Trabajadores y Empresas',
+    shortDesc: 'Despidos injustificados, conciliación prejudicial, cálculo de prestaciones y defensa patronal.',
+    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    id: '08',
+    slug: 'derecho-condominal',
+    category: 'DERECHO CONDOMINAL',
+    title: 'Asesoría y Defensa de Derechos Condominales',
+    shortDesc: 'Respaldo legal para mesas directivas, administraciones, asambleas y recuperación de cartera vencida.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    id: '09',
+    slug: 'derecho-agrario-regularizacion',
+    category: 'DERECHO AGRARIO E INMOBILIARIO',
+    title: 'Regularización de Predios y Certeza Patrimonial',
+    shortDesc: 'Predios ejidales, dominio pleno, escrituración, inscripción registral y regularización inmobiliaria.',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    id: '10',
+    slug: 'gestion-notarial',
+    category: 'GESTIÓN NOTARIAL',
+    title: 'Gestión Notarial y Formalización de Actos',
+    shortDesc: 'Escrituración de inmuebles, constitución de sociedades, poderes, protocolización e inscripción registral.',
+    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop'
+  },
+  
+  
+  // Aquí puedes seguir agregando los siguientes servicios...
 ];
 
-export default function Services() {
-  const [activeImage, setActiveImage] = useState(servicesList[0].image);
-  const [isHovering, setIsHovering] = useState(false);
+export default function Servicios() {
+  const [hoveredService, setHoveredService] = useState(null);
 
   return (
-    <div className="relative min-h-screen bg-[#030303] text-white pt-32 pb-20 selection:bg-[#D4AF37] selection:text-black">
+    <div className="relative bg-[#030303] min-h-screen text-[#F5F5F5] font-sans selection:bg-[#D4AF37] selection:text-black pt-32 pb-32 overflow-hidden">
       
-      {/* FONDO DINÁMICO (Image Reveal Effect) */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={activeImage}
-            src={activeImage}
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: isHovering ? 0.15 : 0.05, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-full h-full object-cover grayscale mix-blend-luminosity"
-            alt="Fondo de servicio"
-          />
+      {/* IMAGEN DE FONDO DINÁMICA (Hover en Desktop) */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden hidden lg:block">
+        <AnimatePresence>
+          {hoveredService && (
+            <motion.div
+              key={hoveredService.id}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 0.25, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.05 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <img 
+                src={hoveredService.image} 
+                alt={hoveredService.title} 
+                className="w-full h-full object-cover grayscale mix-blend-luminosity"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/60 to-[#030303]/80"></div>
+            </motion.div>
+          )}
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030303] via-[#030303]/80 to-[#030303]"></div>
       </div>
 
-      {/* CONTENIDO PRINCIPAL */}
-      <div className="relative z-10 max-w-[1400px] mx-auto px-8 md:px-24">
-        
-        {/* ENCABEZADO DE LA PÁGINA */}
-        <div className="mb-24 md:mb-40">
-          <FadeIn>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-[1px] bg-[#D4AF37]"></div>
-              <span className="uppercase text-[10px] tracking-[0.5em] text-[#D4AF37] font-semibold">Portafolio de Prácticas</span>
-            </div>
-          </FadeIn>
-          
-          <FadeIn delay={0.2}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] tracking-tight">
-              Dominio Total del <br />
-              <span className="italic text-gray-500">entorno normativo.</span>
-            </h1>
-          </FadeIn>
-          
-          <FadeIn delay={0.4}>
-            <p className="mt-10 text-gray-400 font-light text-lg md:text-xl max-w-2xl leading-relaxed">
-              No tercerizamos nuestra excelencia. Proveemos una gestión legal y administrativa quirúrgica para que sus proyectos operen con absoluta certidumbre jurídica.
-            </p>
-          </FadeIn>
+      {/* CABECERA */}
+      <section className="relative z-10 w-full px-6 md:px-24 max-w-[1400px] mx-auto mb-24">
+        <div className="flex items-center gap-6 mb-6">
+          <span className="text-xs font-mono text-[#D4AF37] tracking-[0.5em] uppercase">Nuestros servicios</span>
+          <div className="w-16 h-[1px] bg-[#D4AF37]"></div>
         </div>
+        
+        <h1 className="text-4xl md:text-7xl lg:text-[85px] font-serif leading-[1.05] tracking-tight mb-8 uppercase">
+          Dominio total del <br />
+          <span className="italic text-[#D4AF37] font-normal lowercase">entorno normativo.</span>
+        </h1>
+        
+        <p className="text-base md:text-xl font-light text-gray-400 max-w-3xl leading-relaxed">
+          No tercerizamos nuestra excelencia. Proveemos una gestión legal y administrativa quirúrgica para que sus proyectos operen con absoluta certeza jurídica.
+        </p>
+      </section>
 
-        {/* LISTA EDITORIAL DE SERVICIOS */}
-        <div 
-          className="flex flex-col border-t border-white/10"
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          {servicesList.map((service, index) => (
-            <ServiceRow 
-              key={service.id} 
-              service={service} 
-              index={index} 
-              onMouseEnter={() => {
-                setActiveImage(service.image);
-                setIsHovering(true);
-              }}
-            />
+      {/* LISTADO DE SERVICIOS ALINEADO Y SIMÉTRICO */}
+      <section className="relative z-10 w-full px-6 md:px-24 max-w-[1400px] mx-auto">
+        <div className="border-t border-white/10">
+          {servicesList.map((service) => (
+            <Link
+              key={service.id}
+              to={`/servicios/${service.slug}`}
+              state={{ serviceData: service }}
+              onMouseEnter={() => setHoveredService(service)}
+              onMouseLeave={() => setHoveredService(null)}
+              className="group relative flex flex-col lg:flex-row lg:items-center justify-between py-12 md:py-16 border-b border-white/10 transition-all duration-500 hover:px-6 bg-transparent hover:bg-white/[0.02]"
+            >
+              {/* Bloque Izquierdo: Número y Título perfectamente alineados al centro vertical */}
+              <div className="flex items-center gap-6 md:gap-10 lg:w-7/12">
+                <span className="text-xs font-mono text-[#D4AF37] tracking-[0.3em] shrink-0">
+                  {service.id}.
+                </span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white group-hover:text-[#D4AF37] transition-colors duration-300 leading-tight">
+                  {service.title}
+                </h2>
+              </div>
+
+              {/* Bloque Derecho: Descripción corta y Botón 100% circular */}
+              <div className="flex items-center justify-between lg:justify-end gap-10 mt-6 lg:mt-0 lg:w-5/12">
+                <p className="text-gray-400 font-light text-sm md:text-base hidden md:block group-hover:text-gray-200 transition-colors">
+                  {service.shortDesc}
+                </p>
+
+                {/* Contenedor del botón con medidas fijas (w-14 h-14) para garantizar que sea un círculo perfecto */}
+                <div className="w-14 h-14 shrink-0 rounded-full border border-white/20 flex items-center justify-center text-gray-300 group-hover:bg-[#D4AF37] group-hover:text-black group-hover:border-[#D4AF37] transition-all duration-300">
+                  <ArrowUpRight className="w-5 h-5 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
+      </section>
 
-      </div>
     </div>
-  );
-}
-
-// COMPONENTE: FILA DE SERVICIO ASIMÉTRICA CON ENLACE DINÁMICO
-function ServiceRow({ service, index, onMouseEnter }) {
-  // Convertimos el título a un "slug" limpio para la URL (ej. "Póliza Jurídica" -> "poliza-juridica")
-  const slug = service.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, '-');
-
-  return (
-    <FadeIn delay={index * 0.1}>
-      <Link 
-        to={`/servicios/${slug}`}
-        state={{ serviceData: service }}
-        onMouseEnter={onMouseEnter}
-        className="group flex flex-col lg:flex-row lg:items-center justify-between border-b border-white/10 py-12 md:py-16 cursor-pointer relative overflow-hidden transition-colors duration-500 hover:bg-[#0A0A0A]/40 w-full"
-      >
-        
-        {/* Izquierda: Número y Título */}
-        <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 lg:w-7/12 relative z-10">
-          <span className="text-sm font-mono text-gray-600 group-hover:text-[#D4AF37] transition-colors duration-500 w-12">
-            {service.id}.
-          </span>
-          <h2 className="text-3xl md:text-5xl font-serif text-gray-300 group-hover:text-white transition-colors duration-500">
-            {service.title}
-          </h2>
-        </div>
-        
-        {/* Derecha: Descripción y Flecha */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8 lg:w-5/12 mt-6 lg:mt-0 relative z-10 pl-0 md:pl-24 lg:pl-0">
-          <p className="text-sm font-light text-gray-500 group-hover:text-gray-300 transition-colors duration-500 leading-relaxed max-w-sm">
-            {service.desc}
-          </p>
-          <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full border border-white/10 group-hover:border-[#D4AF37] group-hover:bg-[#D4AF37] text-gray-600 group-hover:text-black transition-all duration-500 transform group-hover:rotate-45">
-            <ArrowUpRight className="w-5 h-5" />
-          </div>
-        </div>
-
-      </Link>
-    </FadeIn>
-  );
-}
-
-// COMPONENTE DE ANIMACIÓN (Fade In)
-function FadeIn({ children, delay = 0 }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-10%" });
-  return (
-    <motion.div 
-      ref={ref} 
-      initial={{ opacity: 0, y: 30 }} 
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} 
-      transition={{ duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-    >
-      {children}
-    </motion.div>
   );
 }
