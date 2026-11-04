@@ -75,7 +75,7 @@ export default function ContactSection() {
                 <span className="text-[10px] font-mono text-[#D4AF37] tracking-[0.3em] uppercase block mb-2">
                   SEDE CORPORATIVA
                 </span>
-                <h3 className="text-xl font-serif text-white mb-1">Central Park Querétaro</h3>
+                <h3 className="text-xl font-serif text-white mb-1">Central Park Querétaro Corporativo 1 Piso 8 letra C</h3>
                 <p className="text-gray-400 text-sm font-light leading-relaxed mb-4">
                   Av. Armando Birlain Shaffler 2001, Corporativo 1<br />
                   Centro Sur, 76090 Santiago de Querétaro, Qro.

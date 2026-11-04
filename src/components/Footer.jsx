@@ -59,7 +59,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-xs text-gray-400 hover:text-[#D4AF37] leading-relaxed pt-2 border-t border-white/5 transition-colors block"
               >
-                Central Park, C. Armando Birlain Shafler 2001, Centro Sur, 76090 Santiago de Querétaro, Qro.
+                Central Park Querétaro Corporativo 1 Piso 8 letra C, C. Armando Birlain Shafler 2001, Centro Sur, 76090 Santiago de Querétaro, Qro.
               </a>
             </div>
           </div>
