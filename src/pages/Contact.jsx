@@ -18,7 +18,7 @@ export default function ContactSection() {
     e.preventDefault();
 
     // Reemplaza este número con el WhatsApp oficial del despacho (Código de país + área + número sin espacios ni guiones)
-    const whatsappNumber = "524427526699"; 
+    const whatsappNumber = "524422361702"; 
 
     // Formatear el mensaje institucional para WhatsApp
     const text = `*Nueva Consulta Jurídica - Sitio Web*%0A%0A` +
