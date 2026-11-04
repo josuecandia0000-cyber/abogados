@@ -31,7 +31,7 @@ export default function ContactSection() {
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
-          {/* LADO IZQUIERDO: INFORMACIÓN INSTITUCIONAL, MAPA A COLOR Y RUTA DINÁMICA */}
+          {/* LADO IZQUIERDO: INFORMACIÓN INSTITUCIONAL, MAPA A COLOR Y BOTÓN DORADO */}
           <div className="lg:col-span-5 flex flex-col justify-between h-full">
             <div>
               {/* Tag y Línea Dorada */}
@@ -79,16 +79,27 @@ export default function ContactSection() {
                   ></iframe>
                 </div>
 
-                {/* BOTÓN INTERACTIVO: CÓMO LLEGAR DESDE MI UBICACIÓN */}
-                <a
+                {/* BOTÓN DORADO DE NAVEGACIÓN GPS */}
+                <motion.a
                   href={routeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[11px] font-mono text-[#D4AF37] hover:underline uppercase tracking-widest mt-1"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-[#D4AF37] text-black py-4 px-6 flex items-center justify-between transition-colors duration-300 group mt-2 font-semibold shadow-lg shadow-[#D4AF37]/10"
                 >
-                  <span>Obtener ruta y cómo llegar desde mi ubicación</span>
-                  <span>→</span>
-                </a>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-mono text-black/70 tracking-[0.3em] uppercase mb-0.5 font-bold">
+                      NAVEGACIÓN GPS
+                    </span>
+                    <span className="text-xs md:text-sm font-sans tracking-wide">
+                      Obtener ruta desde mi ubicación
+                    </span>
+                  </div>
+                  <span className="text-lg text-black transition-transform transform group-hover:translate-x-1 duration-300">
+                    →
+                  </span>
+                </motion.a>
               </div>
 
               {/* Canales Directos */}
@@ -178,7 +189,7 @@ export default function ContactSection() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="empresa@contacto.com"
-                    className="w-full bg-transparent border-b border-white/20 py-3 text-white text-sm focus:outline-none focus:border-[#D4AF37] transition-colors placeholder:text-gray-700"
+                    className="w-full bg-transparent border-b border-white/20 py-3 text-white text-sm focus:outline-none focus:border-[#D4AF37] transition-colors placeholder:text-gray-750"
                   />
                 </div>
 
