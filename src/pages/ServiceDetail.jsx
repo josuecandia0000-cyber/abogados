@@ -10,7 +10,7 @@ const servicesDatabase = {
     title: 'Gestoría Legal para Licencias de Venta de Bebidas Alcohólicas',
     tagline: 'Obtén los permisos para vender alcohol y abre tu negocio con respaldo jurídico y seguridad administrativa.',
     heroTitle: ['Licencias de', 'Bebidas Alcohólicas'],
-    image: '../public/licen.jpeg',
+    image: '/licen.jpeg',
     intro: 'En Gestoría Jurídica Abogados brindamos servicios integrales de asesoría, gestoría legal y acompañamiento administrativo para personas físicas, empresas y comerciantes que requieren obtener, regularizar, modificar o renovar las licencias y autorizaciones necesarias para la venta de bebidas alcohólicas.',
     target: 'Nuestro servicio está dirigido a restaurantes, bares, cantinas, vinaterías, tiendas de conveniencia, establecimientos de alimentos y bebidas, y otros negocios que, de acuerdo con su actividad comercial, requieren autorización para comercializar bebidas alcohólicas.',
     diagnostic: 'Analizamos las características del establecimiento, el giro comercial, la ubicación del inmueble y la documentación disponible para identificar los requisitos aplicables y establecer una ruta de gestión conforme a la legislación estatal y municipal correspondiente.',
@@ -47,7 +47,7 @@ const servicesDatabase = {
     title: 'Gestoría Legal para Licencias de Funcionamiento y Regularización de Establecimientos Comerciales',
     tagline: 'Abre y regulariza tu negocio con respaldo jurídico, permisos en regla y tranquilidad para operar.',
     heroTitle: ['Licencias de', 'Funcionamiento'],
-    image: '../public/funcio.jpg',
+    image: '/funcio.jpg',
     intro: 'En Gestoría Jurídica Abogados brindamos servicios integrales de gestoría legal y administrativa para personas físicas, empresas, comerciantes y emprendedores que requieren obtener, regularizar, actualizar o renovar las licencias y autorizaciones necesarias para la apertura y operación de establecimientos comerciales y de servicios, sin venta de bebidas alcohólicas.',
     target: 'Nuestro servicio comprende el análisis jurídico y administrativo de cada establecimiento para identificar los requisitos aplicables según el giro comercial, la ubicación del inmueble, sus características físicas y la normativa municipal, estatal y federal que corresponda.',
     diagnostic: 'A través de una revisión preliminar, identificamos los trámites necesarios, posibles inconsistencias documentales y requisitos pendientes, con el propósito de establecer una ruta de gestión adecuada para cada negocio. Antes de iniciar cada trámite, revisamos la documentación del negocio y del inmueble, los antecedentes administrativos disponibles y los requisitos de las autoridades competentes.',
@@ -80,7 +80,7 @@ const servicesDatabase = {
     title: 'Derecho Familiar y Protección Patrimonial',
     tagline: 'Defendemos tus derechos y te acompañamos para proteger a tu familia y tu patrimonio.', // 13 palabras (Cumple regla de máx 15)
     heroTitle: ['Derecho', 'Familiar'],
-    image: '../public/patri.jpg',
+    image: '/patri.jpg',
     intro: 'Brindamos asesoría, acompañamiento y representación jurídica en asuntos de derecho familiar, atendiendo cada caso de manera personalizada y con sensibilidad ante las circunstancias personales y familiares de nuestros clientes.',
     target: 'Nuestro objetivo es ayudar a las personas a comprender sus derechos, conocer sus alternativas legales y tomar decisiones informadas para resolver sus conflictos familiares, procurando proteger el bienestar de los menores de edad y los intereses legítimos de nuestros representados.',
     diagnostic: 'Cada asunto comienza con una evaluación jurídica de los antecedentes, las pruebas disponibles y las necesidades de la persona. A partir de ese análisis, definimos las alternativas de solución, ya sea mediante un convenio, cuando resulte viable y legalmente procedente, o a través de un procedimiento ante la autoridad judicial competente.',
@@ -116,7 +116,7 @@ const servicesDatabase = {
     title: 'Defensa Civil y Protección del Patrimonio Inmobiliario',
     tagline: 'Defendemos tus derechos, exigimos el cumplimiento de tus contratos y protegemos tu patrimonio.', // 13 palabras
     heroTitle: ['Defensa Civil y', 'Patrimonio'],
-    image: '../public/contra.jpeg',
+    image: '/contra.jpeg',
     intro: 'El servicio consiste en brindar asesoría, representación y defensa jurídica en controversias civiles derivadas del incumplimiento de contratos de arrendamiento, compraventa de bienes inmuebles y otras obligaciones contractuales que puedan afectar el patrimonio de nuestros clientes.',
     target: 'En Gestoría Jurídica Abogados analizamos cada caso para determinar las acciones legales procedentes y ejercer los mecanismos jurídicos necesarios para exigir el cumplimiento de las obligaciones contractuales, defender los derechos de propiedad y, cuando corresponda, reclamar la entrega o restitución de un inmueble.',
     diagnostic: 'Asimismo, cuando las condiciones del asunto lo permitan, gestionamos acercamientos con la contraparte para buscar una solución mediante la negociación y la celebración de convenios que otorguen certeza jurídica a las partes.',
@@ -150,7 +150,7 @@ const servicesDatabase = {
     title: 'Cobranza Judicial, Recuperación de Adeudos y Defensa Mercantil',
     tagline: 'Hacemos valer tus derechos comerciales y exigimos legalmente el pago de tus adeudos.', // 13 palabras
     heroTitle: ['Cobranza y Defensa', 'Mercantil'],
-    image: '../public/cobra.jpg',
+    image: '/cobra.jpg',
     intro: 'El servicio consiste en brindar asesoría, representación y defensa jurídica en controversias derivadas de actos de comercio, incumplimientos de obligaciones mercantiles y recuperación de créditos, con el objetivo de proteger los intereses económicos y jurídicos de nuestros clientes.',
     target: 'En Gestoría Jurídica Abogados representamos a personas físicas y morales que necesitan exigir el pago de deudas, hacer efectivos títulos de crédito o defenderse frente a reclamaciones mercantiles. Analizamos cada operación, los documentos que acreditan la obligación y las circunstancias del incumplimiento para determinar la vía legal procedente.',
     diagnostic: 'Asimismo, procuramos identificar oportunidades de negociación y celebrar convenios de pago que permitan recuperar los adeudos bajo condiciones jurídicamente claras y exigibles.',
@@ -186,7 +186,7 @@ const servicesDatabase = {
     title: 'Defensa Penal, Representación Jurídica y Protección de tus Derechos',
     tagline: 'Defendemos tu libertad, protegemos tus derechos y exigimos justicia con una estrategia jurídica sólida.', // 13 palabras
     heroTitle: ['Defensa Penal y', 'Justicia'],
-    image: '../public/penal.jpeg',
+    image: '/penal.jpeg',
     intro: 'El servicio consiste en brindar asesoría, representación y defensa jurídica en asuntos de naturaleza penal, tanto a personas que enfrentan una investigación o acusación por la probable comisión de un delito como a víctimas u ofendidos que buscan denunciar hechos delictivos y obtener la reparación integral del daño cuando legalmente corresponda.',
     target: 'En Gestoría Jurídica Abogados analizamos las circunstancias de cada caso, los antecedentes, los datos de prueba y las disposiciones legales aplicables para establecer una estrategia de actuación orientada a proteger los derechos e intereses de nuestros representados.',
     diagnostic: 'Cada asunto requiere un análisis particular para determinar la estrategia adecuada, las actuaciones necesarias y las posibilidades jurídicas reales, sin comprometer anticipadamente un resultado.',
@@ -223,7 +223,7 @@ const servicesDatabase = {
     title: 'Defensa Laboral Integral para Trabajadores y Empresas',
     tagline: 'Defendemos tus derechos laborales y protegemos los intereses de trabajadores y empleadores.', // 13 palabras
     heroTitle: ['Defensa Laboral y', 'Empresarial'],
-    image: '../public/laboral.jpeg',
+    image: '/laboral.jpeg',
     intro: 'El servicio consiste en brindar asesoría, representación y defensa jurídica en materia laboral, tanto a trabajadores que buscan hacer valer sus derechos como a patrones y empresas que requieren prevenir, atender o resolver controversias derivadas de las relaciones de trabajo.',
     target: 'En Gestoría Jurídica Abogados intervenimos en conflictos relacionados con despidos injustificados, rescisión de la relación laboral, pago de salarios y prestaciones, finiquitos, liquidaciones, indemnizaciones, incumplimiento de obligaciones laborales y elaboración o revisión de contratos individuales de trabajo.',
     diagnostic: 'Asimismo, ofrecemos orientación preventiva a empleadores para fortalecer sus prácticas de contratación, documentar adecuadamente las relaciones laborales y reducir riesgos derivados del incumplimiento de las obligaciones legales.',
@@ -256,7 +256,7 @@ const servicesDatabase = {
     title: 'Asesoría Jurídica y Defensa de los Derechos Condominales',
     tagline: 'Defendemos tus derechos condominales, fortalecemos la gestión legal y protegemos el patrimonio de tu comunidad.', // 13 palabras
     heroTitle: ['Derecho', 'Condominal'],
-    image: '../public/condo.jpeg',
+    image: '/condo.jpeg',
     intro: 'En Gestoría Jurídica Abogados brindamos asesoría, acompañamiento y representación jurídica especializada en materia condominal, dirigida a condóminos, mesas directivas y administraciones de condominios que requieren certeza jurídica en el ejercicio de sus funciones, la defensa de sus derechos y el cumplimiento de las obligaciones establecidas en la legislación aplicable, la escritura constitutiva y el reglamento interno.',
     target: 'Nuestro servicio tiene como finalidad proporcionar respaldo legal en la toma de decisiones, prevenir controversias, atender conflictos entre condóminos y fortalecer el funcionamiento jurídico de la organización condominal, sin sustituir las funciones propias de la administración del inmueble.',
     diagnostic: 'Nuestro acompañamiento se adapta a las necesidades de cada condominio y se desarrolla conforme a la legislación aplicable en la entidad donde se encuentra el inmueble, así como a las disposiciones que regulan su régimen de propiedad.',
@@ -293,7 +293,7 @@ const servicesDatabase = {
     title: 'Regularización de Predios, Seguridad Jurídica y Certeza Patrimonial',
     tagline: 'Regularizamos tu propiedad para que tengas certeza jurídica y seguridad sobre el patrimonio que te pertenece.', // 13 palabras
     heroTitle: ['Regularización de', 'Predios'],
-    image: '../public/predio.jpeg',
+    image: '/predio.jpeg',
     intro: 'En Gestoría Jurídica Abogados brindamos asesoría, gestión y acompañamiento jurídico en materia agraria e inmobiliaria, orientados a la regularización de predios, la formalización de derechos sobre la tierra y la obtención de certeza jurídica respecto de la propiedad.',
     target: 'Nuestro servicio está dirigido a personas que poseen terrenos con documentación irregular, predios de origen ejidal o comunal, propiedades sin escrituración o inmuebles cuyos antecedentes jurídicos requieren revisión para determinar la vía legal que permita regularizar su situación.',
     diagnostic: 'Analizamos los antecedentes registrales, documentales y agrarios de cada inmueble para identificar su régimen jurídico y establecer el procedimiento que corresponda. Cuando legalmente resulta viable, gestionamos las actuaciones necesarias para formalizar la propiedad privada, obtener el instrumento jurídico correspondiente y tramitar su inscripción.',
@@ -328,7 +328,7 @@ const servicesDatabase = {
     title: 'Gestión Notarial, Formalización de Actos Jurídicos y Seguridad Patrimonial',
     tagline: 'Simplificamos tus trámites notariales y te acompañamos para dar certeza jurídica a tus actos y negocios.', // 13 palabras
     heroTitle: ['Gestión Notarial y', 'Formalización'],
-    image: '../public/notarial.jpeg',
+    image: '/notarial.jpeg',
     intro: 'En Gestoría Jurídica Abogados brindamos servicios de gestión, asesoría y acompañamiento jurídico en trámites notariales, desde el análisis preliminar de documentos hasta la integración de expedientes, coordinación con la notaría y seguimiento de los procedimientos necesarios para formalizar actos jurídicos.',
     target: 'Nuestro servicio está dirigido a personas físicas, empresas, inversionistas, propietarios y emprendedores que requieren formalizar operaciones inmobiliarias, constituir sociedades mercantiles, protocolizar documentos o realizar actos que requieran intervención notarial.',
     diagnostic: 'La intervención del notario público es independiente de nuestros servicios de gestión y asesoría. La autorización de instrumentos, la fe pública y la determinación de los requisitos notariales corresponden exclusivamente al fedatario competente. Nuestro acompañamiento tiene como finalidad facilitar la preparación del trámite y dar seguimiento a las gestiones necesarias.',
