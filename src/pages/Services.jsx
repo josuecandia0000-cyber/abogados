@@ -10,7 +10,7 @@ const servicesList = [
     category: 'GESTORÍA COMERCIAL',
     title: 'Licencias de alcohol',
     shortDesc: 'Obtención, regularización y renovación de licencias comerciales y permisos de alcoholes.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/licen.jpeg'
   },
   {
     id: '02',
@@ -18,15 +18,15 @@ const servicesList = [
     category: 'GESTORÍA COMERCIAL',
     title: 'Licencias de Funcionamiento y Regularización',
     shortDesc: 'Apertura, regularización y renovación de licencias comerciales y vistos buenos para negocios sin alcohol.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/funcio.jpg'
   },
   {
     id: '03',
     slug: 'derecho-familiar',
-    category: 'DERECHO CIVIL Y FAMILIAR',
+    category: 'DERECHO FAMILIAR',
     title: 'Derecho Familiar y Protección Patrimonial',
     shortDesc: 'Defendemos tus derechos, tu patrimonio y el bienestar de tu familia con sensibilidad jurídica.',
-    image: 'https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/patri.jpg'
   },
   {
     id: '04',
@@ -34,7 +34,7 @@ const servicesList = [
     category: 'DERECHO CIVIL',
     title: 'Defensa Civil y Protección Patrimonial',
     shortDesc: 'Incumplimiento de contratos, arrendamientos y recuperación de bienes inmuebles.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/contra.jpeg'
   },
   {
     id: '05',
@@ -42,7 +42,7 @@ const servicesList = [
     category: 'DERECHO MERCANTIL',
     title: 'Cobranza Judicial y Defensa Mercantil',
     shortDesc: 'Recuperación de adeudos, ejecución de pagarés, títulos de crédito y controversias comerciales.',
-    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/cobra.jpg'
   },
   {
     id: '06',
@@ -50,7 +50,7 @@ const servicesList = [
     category: 'DERECHO PENAL',
     title: 'Defensa Penal y Representación Jurídica',
     shortDesc: 'Estrategia jurídica sólida para la defensa penal, protección de derechos y representación de víctimas.',
-    image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/penal.jpeg'
   },
   {
     id: '07',
@@ -58,7 +58,7 @@ const servicesList = [
     category: 'DERECHO LABORAL',
     title: 'Defensa Laboral para Trabajadores y Empresas',
     shortDesc: 'Despidos injustificados, conciliación prejudicial, cálculo de prestaciones y defensa patronal.',
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/laboral.jpeg'
   },
   {
     id: '08',
@@ -66,7 +66,7 @@ const servicesList = [
     category: 'DERECHO CONDOMINAL',
     title: 'Asesoría y Defensa de Derechos Condominales',
     shortDesc: 'Respaldo legal para mesas directivas, administraciones, asambleas y recuperación de cartera vencida.',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/condo.jpeg'
   },
   {
     id: '09',
@@ -74,7 +74,7 @@ const servicesList = [
     category: 'DERECHO AGRARIO E INMOBILIARIO',
     title: 'Regularización de Predios y Certeza Patrimonial',
     shortDesc: 'Predios ejidales, dominio pleno, escrituración, inscripción registral y regularización inmobiliaria.',
-    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/predio.jpeg'
   },
   {
     id: '10',
@@ -82,7 +82,7 @@ const servicesList = [
     category: 'GESTIÓN NOTARIAL',
     title: 'Gestión Notarial y Formalización de Actos',
     shortDesc: 'Escrituración de inmuebles, constitución de sociedades, poderes, protocolización e inscripción registral.',
-    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/notarial.jpeg'
   },
   
   

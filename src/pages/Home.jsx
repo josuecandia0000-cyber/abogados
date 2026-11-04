@@ -10,21 +10,21 @@ const featuredServices = [
     category: 'GESTORÍA',
     title: 'Gestoría Corporativa y Licencias',
     desc: 'Obtención y regularización de licencias de funcionamiento, alcoholes y autorizaciones comerciales.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/alcohol.jpg'
   },
   {
     id: '02',
     category: 'DEFENSA',
     title: 'Defensa Civil, Familiar y Penal',
     desc: 'Representación jurídica en convenios, contratos, derecho familiar y procesos penales.',
-    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop'
+    image: './src/assets/penal.jpg'
   },
   {
     id: '03',
     category: 'PATRIMONIO',
     title: 'Propiedad, Agrario y Notarial',
     desc: 'Regularización de inmuebles, derecho mercantil, condominios y acompañamiento notarial.',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop'
+    image: './src/assets/not.jpg'
   }
 ];
 
@@ -51,7 +51,7 @@ export default function Home() {
       <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex items-end pb-24 px-8 md:px-24">
         <motion.div style={{ y: yImage }} className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+            src="./src/assets/h.jpg" 
             alt="Gestoría Jurídica Abogados" 
             className="w-full h-full object-cover grayscale mix-blend-luminosity opacity-25"
           />

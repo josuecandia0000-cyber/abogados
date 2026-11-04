@@ -7,42 +7,42 @@ const boardMembers = [
     name: 'Lic. Camilo Medina Ramírez',
     role: 'Director General y Socio Fundador',
     bio: 'Cuenta con más de 15 años de experiencia en el ejercicio profesional del Derecho, enfocado en Derecho Privado, Condominal y Administrativo. Especialista en la asesoría de empresas, personas físicas y la gestión de procedimientos para establecimientos comerciales en Querétaro.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Camilo.jpeg'
   },
   {
     id: '02',
     name: 'Lic. Stephania Fernández Lara Martínez',
     role: 'Socia Fundadora, Directora Administrativa y de Atención al Cliente',
     bio: 'Formación académica en Psicología que aporta una perspectiva humana y empática a la firma. Coordina la organización interna, la atención personalizada, los procesos administrativos y la comunicación directa entre los clientes y el equipo jurídico.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Stephania.jpeg'
   },
   {
     id: '03',
     name: 'Lic. Edwin Herrera Hervert',
     role: 'Socio y Abogado Postulante',
     bio: 'Especialista en litigio estratégico y postulación en materias mercantil, familiar, civil, constitucional y amparo. Su enfoque está orientado al análisis responsable de controversias y la búsqueda de soluciones prácticas y eficaces para cada cliente.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Edwin.jpg'
   },
   {
     id: '04',
     name: 'Lic. Daniela Ortiz Alcántara',
     role: 'Socia y Abogada Especialista',
     bio: 'Especialista en Derecho Administrativo, Notarial y Agrario. Su práctica se enfoca en la gestión de procedimientos ante autoridades, formalización de actos jurídicos ante fedatarios y regularización de derechos sobre la tierra para garantizar seguridad patrimonial.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Daniela.jpeg'
   },
   {
     id: '05',
     name: 'Lic. Jorge Villegas Luna',
     role: 'Especialista en Derecho Penal',
     bio: 'Especialista en Derecho Penal y Sistema de Justicia Penal con experiencia en el servicio público. Enfocado en la defensa técnica de imputados, asesoría a víctimas, análisis de carpetas de investigación y protección del debido proceso.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Jorge.jpeg'
   },
   {
     id: '06',
     name: 'Lic. Héctor Hugo García Mejía',
     role: 'Especialista en Derecho Laboral',
     bio: 'Especialista en Derecho Laboral y Relaciones de Trabajo. Su práctica abarca la representación tanto de trabajadores como de patrones en controversias, conciliación prejudicial, juicios laborales, contratos y prevención de contingencias.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop'
+    image: './src/assets/Hector.jpeg'
   }
 ];
 
@@ -54,17 +54,16 @@ export default function AboutSection() {
       
       {/* 1. HERO DE IMPACTO INICIAL REFINADO */}
       <section className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-center text-center px-6">
-        
-        {/* Imagen de fondo corporativa con filtro cinematográfico */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop" 
-            alt="Despacho Jurídico Central Park Querétaro" 
-            className="w-full h-full object-cover grayscale mix-blend-luminosity opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/70 to-[#030303]/90"></div>
-        </div>
-
+{/* Imagen de fondo corporativa adaptada para móvil sin recortes */}
+<div className="absolute inset-0 z-0 overflow-hidden bg-[#030303]">
+  <img 
+    src="./src/assets/socios.jpg" 
+    alt="Despacho Jurídico Central Park Querétaro" 
+    className="w-full h-full object-fill md:object-cover grayscale mix-blend-luminosity opacity-45"
+  />
+  {/* Gradiente sutil para fundir y mantener la legibilidad de los textos */}
+  <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-[#030303]/50 to-[#030303]/70"></div>
+</div>
         {/* Contenido del Hero */}
         <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
           
