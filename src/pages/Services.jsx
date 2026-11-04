@@ -10,7 +10,7 @@ const servicesList = [
     category: 'GESTORÍA COMERCIAL',
     title: 'Licencias de alcohol',
     shortDesc: 'Obtención, regularización y renovación de licencias comerciales y permisos de alcoholes.',
-    image: './src/assets/licen.jpeg'
+    image: 'public/licen.jpeg'
   },
   {
     id: '02',
@@ -18,7 +18,7 @@ const servicesList = [
     category: 'GESTORÍA COMERCIAL',
     title: 'Licencias de Funcionamiento y Regularización',
     shortDesc: 'Apertura, regularización y renovación de licencias comerciales y vistos buenos para negocios sin alcohol.',
-    image: './src/assets/funcio.jpg'
+    image: 'public/funcio.jpg'
   },
   {
     id: '03',
@@ -26,7 +26,7 @@ const servicesList = [
     category: 'DERECHO FAMILIAR',
     title: 'Derecho Familiar y Protección Patrimonial',
     shortDesc: 'Defendemos tus derechos, tu patrimonio y el bienestar de tu familia con sensibilidad jurídica.',
-    image: './src/assets/patri.jpg'
+    image: 'public/patri.jpg'
   },
   {
     id: '04',
@@ -34,7 +34,7 @@ const servicesList = [
     category: 'DERECHO CIVIL',
     title: 'Defensa Civil y Protección Patrimonial',
     shortDesc: 'Incumplimiento de contratos, arrendamientos y recuperación de bienes inmuebles.',
-    image: './src/assets/contra.jpeg'
+    image: 'public/contra.jpeg'
   },
   {
     id: '05',
@@ -42,7 +42,7 @@ const servicesList = [
     category: 'DERECHO MERCANTIL',
     title: 'Cobranza Judicial y Defensa Mercantil',
     shortDesc: 'Recuperación de adeudos, ejecución de pagarés, títulos de crédito y controversias comerciales.',
-    image: './src/assets/cobra.jpg'
+    image: 'public/cobra.jpg'
   },
   {
     id: '06',
@@ -50,7 +50,7 @@ const servicesList = [
     category: 'DERECHO PENAL',
     title: 'Defensa Penal y Representación Jurídica',
     shortDesc: 'Estrategia jurídica sólida para la defensa penal, protección de derechos y representación de víctimas.',
-    image: './src/assets/penal.jpeg'
+    image: 'public/penal.jpeg'
   },
   {
     id: '07',
@@ -58,7 +58,7 @@ const servicesList = [
     category: 'DERECHO LABORAL',
     title: 'Defensa Laboral para Trabajadores y Empresas',
     shortDesc: 'Despidos injustificados, conciliación prejudicial, cálculo de prestaciones y defensa patronal.',
-    image: './src/assets/laboral.jpeg'
+    image: 'public/laboral.jpeg'
   },
   {
     id: '08',
@@ -66,7 +66,7 @@ const servicesList = [
     category: 'DERECHO CONDOMINAL',
     title: 'Asesoría y Defensa de Derechos Condominales',
     shortDesc: 'Respaldo legal para mesas directivas, administraciones, asambleas y recuperación de cartera vencida.',
-    image: './src/assets/condo.jpeg'
+    image: 'public/condo.jpeg'
   },
   {
     id: '09',
@@ -74,7 +74,7 @@ const servicesList = [
     category: 'DERECHO AGRARIO E INMOBILIARIO',
     title: 'Regularización de Predios y Certeza Patrimonial',
     shortDesc: 'Predios ejidales, dominio pleno, escrituración, inscripción registral y regularización inmobiliaria.',
-    image: './src/assets/predio.jpeg'
+    image: 'public/predio.jpeg'
   },
   {
     id: '10',
@@ -82,7 +82,7 @@ const servicesList = [
     category: 'GESTIÓN NOTARIAL',
     title: 'Gestión Notarial y Formalización de Actos',
     shortDesc: 'Escrituración de inmuebles, constitución de sociedades, poderes, protocolización e inscripción registral.',
-    image: './src/assets/notarial.jpeg'
+    image: 'public/notarial.jpeg'
   },
   
   

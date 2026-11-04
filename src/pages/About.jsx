@@ -7,42 +7,42 @@ const boardMembers = [
     name: 'Lic. Camilo Medina Ramírez',
     role: 'Director General y Socio Fundador',
     bio: 'Cuenta con más de 15 años de experiencia en el ejercicio profesional del Derecho, enfocado en Derecho Privado, Condominal y Administrativo. Especialista en la asesoría de empresas, personas físicas y la gestión de procedimientos para establecimientos comerciales en Querétaro.',
-    image: './src/assets/Camilo.jpeg'
+    image: 'public/Camilo.jpeg'
   },
   {
     id: '02',
     name: 'Lic. Stephania Fernández Lara Martínez',
     role: 'Socia Fundadora, Directora Administrativa y de Atención al Cliente',
     bio: 'Formación académica en Psicología que aporta una perspectiva humana y empática a la firma. Coordina la organización interna, la atención personalizada, los procesos administrativos y la comunicación directa entre los clientes y el equipo jurídico.',
-    image: './src/assets/Stephania.jpeg'
+    image: 'public/Stephania.jpeg'
   },
   {
     id: '03',
     name: 'Lic. Edwin Herrera Hervert',
     role: 'Socio y Abogado Postulante',
     bio: 'Especialista en litigio estratégico y postulación en materias mercantil, familiar, civil, constitucional y amparo. Su enfoque está orientado al análisis responsable de controversias y la búsqueda de soluciones prácticas y eficaces para cada cliente.',
-    image: './src/assets/Edwin.jpg'
+    image: 'public/Edwin.jpg'
   },
   {
     id: '04',
     name: 'Lic. Daniela Ortiz Alcántara',
     role: 'Socia y Abogada Especialista',
     bio: 'Especialista en Derecho Administrativo, Notarial y Agrario. Su práctica se enfoca en la gestión de procedimientos ante autoridades, formalización de actos jurídicos ante fedatarios y regularización de derechos sobre la tierra para garantizar seguridad patrimonial.',
-    image: './src/assets/Daniela.jpeg'
+    image: 'public/Daniela.jpeg'
   },
   {
     id: '05',
     name: 'Lic. Jorge Villegas Luna',
     role: 'Especialista en Derecho Penal',
     bio: 'Especialista en Derecho Penal y Sistema de Justicia Penal con experiencia en el servicio público. Enfocado en la defensa técnica de imputados, asesoría a víctimas, análisis de carpetas de investigación y protección del debido proceso.',
-    image: './src/assets/Jorge.jpeg'
+    image: 'public/Jorge.jpeg'
   },
   {
     id: '06',
     name: 'Lic. Héctor Hugo García Mejía',
     role: 'Especialista en Derecho Laboral',
     bio: 'Especialista en Derecho Laboral y Relaciones de Trabajo. Su práctica abarca la representación tanto de trabajadores como de patrones en controversias, conciliación prejudicial, juicios laborales, contratos y prevención de contingencias.',
-    image: './src/assets/Hector.jpeg'
+    image: 'public/Hector.jpeg'
   }
 ];
 
@@ -57,7 +57,7 @@ export default function AboutSection() {
 {/* Imagen de fondo corporativa adaptada para móvil sin recortes */}
 <div className="absolute inset-0 z-0 overflow-hidden bg-[#030303]">
   <img 
-    src="./src/assets/socios.jpg" 
+    src="public/socios.jpg" 
     alt="Despacho Jurídico Central Park Querétaro" 
     className="w-full h-full object-fill md:object-cover grayscale mix-blend-luminosity opacity-45"
   />
