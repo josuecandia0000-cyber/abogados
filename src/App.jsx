@@ -4,10 +4,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail'; // NUEVO COMPONENTE
+import ServiceDetail from './pages/ServiceDetail'; 
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 // Componente para asegurar que al cambiar de página, volvemos arriba
 function ScrollToTop() {
@@ -35,7 +36,10 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <ScrollToTopButton />
+        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+        <FloatingWhatsApp />
+        <ScrollToTopButton /> 
+      </div>
       </div>
     </Router>
   );
