@@ -14,12 +14,26 @@ export default function ContactSection() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    console.log('Datos enviados:', formData);
+
+    // Reemplaza este número con el WhatsApp oficial del despacho (Código de país + área + número sin espacios ni guiones)
+    const whatsappNumber = "524427526699"; 
+
+    // Formatear el mensaje institucional para WhatsApp
+    const text = `*Nueva Consulta Jurídica - Sitio Web*%0A%0A` +
+                 `*• Nombre / Representante:* ${formData.name}%0A` +
+                 `*• Teléfono:* ${formData.phone}%0A` +
+                 `*• Correo:* ${formData.email}%0A` +
+                 `*• Materia de Interés:* ${formData.service}%0A%0A` +
+                 `*• Síntesis del Asunto:*%0A${formData.message}`;
+
+    // Abrir la API de WhatsApp con el mensaje prellenado
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+    window.open(whatsappUrl, '_blank');
   };
 
-  // URL con Google Maps Directions API para calcular ruta desde el GPS/ubicación actual del usuario
+  // URL para las indicaciones en Google Maps hacia Central Park
   const routeUrl = "https://www.google.com/maps/dir/?api=1&destination=Gestor%C3%ADa+Jur%C3%ADdica+Abogados+Central+Park+Quer%C3%A9taro&destination_place_id=ChIJ4VtM8_NF04URe0DeIIySVik";
 
   return (
@@ -31,7 +45,7 @@ export default function ContactSection() {
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
-          {/* LADO IZQUIERDO: INFORMACIÓN INSTITUCIONAL, MAPA A COLOR Y BOTÓN DORADO */}
+          {/* LADO IZQUIERDO: INFORMACIÓN INSTITUCIONAL, MAPA Y BOTÓN DE RUTA */}
           <div className="lg:col-span-5 flex flex-col justify-between h-full">
             <div>
               {/* Tag y Línea Dorada */}
@@ -67,7 +81,7 @@ export default function ContactSection() {
                   Centro Sur, 76090 Santiago de Querétaro, Qro.
                 </p>
 
-                {/* CONTENEDOR DEL MAPA A COLOR CON MARCADOR EXACTO */}
+                {/* CONTENEDOR DEL MAPA */}
                 <div className="relative w-full h-48 border border-white/10 overflow-hidden bg-[#060606] mb-4">
                   <iframe
                     title="Gestoría Jurídica Abogados - Central Park Querétaro"
@@ -132,15 +146,18 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* LADO DERECHO: FORMULARIO EDITORIAL DE ALTA GAMA */}
+          {/* LADO DERECHO: FORMULARIO CON REDIRECCIÓN A WHATSAPP */}
           <div className="lg:col-span-7 bg-[#060606] border border-white/10 p-8 sm:p-12 relative">
             
             <div className="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
               <h3 className="text-xl font-serif text-white">Formulario de Atención Jurídica</h3>
-              <span className="text-[10px] font-mono text-gray-500 tracking-widest uppercase">ENLACE CIFRADO</span>
+              <span className="text-[10px] font-mono text-[#25D366] tracking-widest uppercase flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+                WHATSAPP DIRECTO
+              </span>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+            <form onSubmit={handleWhatsAppSubmit} className="flex flex-col gap-8">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {/* Nombre */}
@@ -189,7 +206,7 @@ export default function ContactSection() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="empresa@contacto.com"
-                    className="w-full bg-transparent border-b border-white/20 py-3 text-white text-sm focus:outline-none focus:border-[#D4AF37] transition-colors placeholder:text-gray-750"
+                    className="w-full bg-transparent border-b border-white/20 py-3 text-white text-sm focus:outline-none focus:border-[#D4AF37] transition-colors placeholder:text-gray-700"
                   />
                 </div>
 
@@ -232,7 +249,7 @@ export default function ContactSection() {
                 ></textarea>
               </div>
 
-              {/* Botón de Envío */}
+              {/* Botón de Envío a WhatsApp */}
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <span className="text-[11px] font-mono text-gray-500">
                   * Sus datos están protegidos bajo estricto secreto profesional.
@@ -242,9 +259,10 @@ export default function ContactSection() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full sm:w-auto bg-white text-black font-mono text-xs tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#D4AF37] hover:text-black transition-colors duration-300 font-semibold"
+                  className="w-full sm:w-auto bg-[#25D366] text-black font-mono text-xs tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#20ba5a] transition-colors duration-300 font-bold flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20"
                 >
-                  Enviar Mensaje
+                  <span>Enviar a WhatsApp</span>
+                  <span>→</span>
                 </motion.button>
               </div>
 
