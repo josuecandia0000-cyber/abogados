@@ -183,39 +183,36 @@ const servicesDatabase = {
   },
   'derecho-penal-defensa': {
     id: '06',
-    title: 'Defensa Penal, Representación Jurídica y Protección de tus Derechos',
-    tagline: 'Defendemos tu libertad, protegemos tus derechos y exigimos justicia con una estrategia jurídica sólida.', // 13 palabras
-    heroTitle: ['Defensa Penal y', 'Justicia'],
+    title: 'Asesoría en Responsabilidad Legal y Protección de Derechos',
+    tagline: 'Protegemos tu tranquilidad y representación jurídica con una estrategia legal sólida.',
+    heroTitle: ['Protección Legal y', 'Derechos'],
     image: '/penal.jpeg',
-    intro: 'El servicio consiste en brindar asesoría, representación y defensa jurídica en asuntos de naturaleza penal, tanto a personas que enfrentan una investigación o acusación por la probable comisión de un delito como a víctimas u ofendidos que buscan denunciar hechos delictivos y obtener la reparación integral del daño cuando legalmente corresponda.',
-    target: 'En Gestoría Jurídica Abogados analizamos las circunstancias de cada caso, los antecedentes, los datos de prueba y las disposiciones legales aplicables para establecer una estrategia de actuación orientada a proteger los derechos e intereses de nuestros representados.',
-    diagnostic: 'Cada asunto requiere un análisis particular para determinar la estrategia adecuada, las actuaciones necesarias y las posibilidades jurídicas reales, sin comprometer anticipadamente un resultado.',
+    intro: 'El servicio consiste en brindar asesoría, representación y orientación en procedimientos ante autoridades correspondientes, tanto para la atención de contingencias legales como para el seguimiento de actuaciones y la protección de derechos patrimoniales o personales.',
+    target: 'En Gestoría Jurídica Abogados analizamos las circunstancias de cada caso, las pruebas disponibles y las disposiciones aplicables para establecer una estrategia de actuación orientada a proteger los intereses de nuestros representados.',
+    diagnostic: 'Cada asunto requiere un análisis particular para determinar la estrategia adecuada, las actuaciones necesarias y las posibilidades legales reales.',
     gestiones: [
-      { title: 'Asesoría y diagnóstico jurídico penal', desc: 'Análisis de los hechos, revisión de documentos y evaluación de las posibles implicaciones legales.' },
-      { title: 'Presentación de denuncias o querellas', desc: 'Orientación y acompañamiento para hacer del conocimiento de la autoridad investigadora los hechos posiblemente delictivos.' },
-      { title: 'Representación de víctimas u ofendidos', desc: 'Seguimiento de la investigación, aportación de datos de prueba y solicitud de diligencias pertinentes para el esclarecimiento de los hechos.' },
-      { title: 'Defensa durante la investigación', desc: 'Asistencia jurídica a personas investigadas, preparación de la estrategia defensiva y protección de sus derechos durante las actuaciones.' },
-      { title: 'Audiencias ante la autoridad judicial', desc: 'Representación en las audiencias que correspondan, incluyendo la formulación de imputación, vinculación a proceso y etapas posteriores.' },
-      { title: 'Etapa intermedia y juicio oral', desc: 'Preparación de la defensa o de la intervención de la víctima, ofrecimiento de medios de prueba y participación en las actuaciones procesales.' },
-      { title: 'Procedimientos y soluciones alternas', desc: 'Evaluación de mecanismos legalmente procedentes, como acuerdos reparatorios o suspensión condicional del proceso, cuando se cumplan sus requisitos.' },
-      { title: 'Impugnaciones y amparo', desc: 'Análisis y, en su caso, promoción de recursos y juicio de amparo contra resoluciones que puedan ser combatidas conforme a la ley.' },
-      { title: 'Reparación integral del daño', desc: 'Gestión de las acciones procedentes para reclamar la reparación del daño a favor de la víctima u ofendido, cuando corresponda.' }
+      { title: 'Asesoría y diagnóstico jurídico', desc: 'Análisis de los hechos, revisión de documentos y evaluación de implicaciones legales.' },
+      { title: 'Presentación de trámites y solicitudes', desc: 'Orientación y acompañamiento para hacer del conocimiento de la autoridad competente las situaciones pertinentes.' },
+      { title: 'Representación de partes interesadas', desc: 'Seguimiento de diligencias, aportación de elementos de prueba y solicitud de trámites oportunos.' },
+      { title: 'Acompañamiento en investigaciones', desc: 'Asistencia legal a personas representadas, preparación de la estrategia y protección de garantías en las actuaciones.' },
+      { title: 'Audiencias ante autoridades', desc: 'Representación técnica en las comparecencias y audiencias correspondientes.' },
+      { title: 'Mecanismos de solución de controversias', desc: 'Evaluación de alternativas legales procedentes y acuerdos conforme a los requisitos de ley.' },
+      { title: 'Impugnaciones y medios de defensa', desc: 'Análisis y promoción de recursos contra resoluciones conforme a la normatividad aplicable.' },
+      { title: 'Restablecimiento de derechos', desc: 'Gestión de acciones procedentes para el resguardo e indemnización de derechos afectados.' }
     ],
     benefits: [
-      'Protección de tus derechos fundamentales: vigilancia del respeto al debido proceso, la presunción de inocencia y las garantías que correspondan.',
-      'Defensa penal estratégica: análisis de los hechos y preparación de una estrategia conforme a los antecedentes y elementos disponibles.',
-      'Acompañamiento jurídico: orientación durante las distintas etapas de la investigación y del procedimiento penal.',
-      'Atención a víctimas de delitos: asesoría para denunciar, aportar elementos de prueba y dar seguimiento a la investigación.',
-      'Búsqueda de reparación del daño: ejercicio de las acciones legalmente procedentes para reclamar la reparación que corresponda.',
-      'Representación ante las autoridades: intervención jurídica en las actuaciones y audiencias que requiera el caso.',
-      'Evaluación de alternativas legales: identificación de mecanismos procesales que puedan resultar viables de acuerdo con la legislación.'
+      'Protección de tus derechos fundamentales y debido proceso.',
+      'Representación legal estratégica conforme a los antecedentes disponibles.',
+      'Acompañamiento integral durante las distintas etapas del procedimiento.',
+      'Atención especializada para el seguimiento de actuaciones formales.',
+      'Evaluación de alternativas y mecanismos legales viables.'
     ],
     pasos: [
-      { step: 'Paso 1', title: 'Asesoría jurídica inicial', desc: 'Escuchamos tu situación, identificamos los hechos relevantes y determinamos si necesitas defensa frente a una investigación penal o representación como víctima u ofendido.' },
-      { step: 'Paso 2', title: 'Análisis de antecedentes y diagnóstico legal', desc: 'Revisamos documentos, denuncias, citatorios, entrevistas, actuaciones ministeriales y demás información disponible para identificar los riesgos jurídicos.' },
-      { step: 'Paso 3', title: 'Definición de la estrategia jurídica', desc: 'Establecemos un plan de actuación acorde con tu situación (denuncia, preparación de defensa, solicitud de diligencias o mecanismos alternativos).' },
-      { step: 'Paso 4', title: 'Representación y seguimiento del procedimiento', desc: 'Brindamos acompañamiento jurídico durante las actuaciones ministeriales y judiciales, preparando argumentos, pruebas y solicitudes.' },
-      { step: 'Paso 5', title: 'Seguimiento de resoluciones y acciones posteriores', desc: 'Analizamos las resoluciones emitidas por las autoridades y determinamos si procede promover recursos, juicio de amparo u otras acciones legales.' }
+      { step: 'Paso 1', title: 'Asesoría jurídica inicial', desc: 'Escuchamos tu situación y determinamos la estrategia de representación necesaria.' },
+      { step: 'Paso 2', title: 'Análisis de antecedentes', desc: 'Revisamos citatorios, expedientes y documentación para identificar los escenarios legales.' },
+      { step: 'Paso 3', title: 'Definición de la estrategia', desc: 'Establecemos un plan de actuación acorde con tu situación y objetivos.' },
+      { step: 'Paso 4', title: 'Representación y seguimiento', desc: 'Brindamos acompañamiento en las actuaciones correspondientes preparando argumentos y pruebas.' },
+      { step: 'Paso 5', title: 'Seguimiento de resoluciones', desc: 'Analizamos las respuestas emitidas por las autoridades para determinar acciones posteriores.' }
     ]
   },
   'derecho-laboral-integral': {

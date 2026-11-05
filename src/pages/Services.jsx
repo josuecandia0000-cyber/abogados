@@ -44,12 +44,12 @@ const servicesList = [
     shortDesc: 'Recuperación de adeudos, ejecución de pagarés, títulos de crédito y controversias comerciales.',
     image: '/cobra.jpg'
   },
-  {
+{
     id: '06',
     slug: 'derecho-penal-defensa',
-    category: 'DERECHO PENAL',
-    title: 'Defensa Penal y Representación Jurídica',
-    shortDesc: 'Estrategia jurídica sólida para la defensa penal, protección de derechos y representación de víctimas.',
+    category: 'ASESORÍA ESPECIALIZADA',
+    title: 'Protección Legal y Representación Jurídica',
+    shortDesc: 'Estrategia legal sólida para la representación formal y protección de derechos.',
     image: '/penal.jpeg'
   },
   {
