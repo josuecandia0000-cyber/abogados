@@ -46,7 +46,7 @@ const servicesList = [
   },
 {
     id: '06',
-    slug: 'proteccion-legal-representacion',
+    slug: 'proteccion-derechos-defensa',
     category: 'ASESORÍA ESPECIALIZADA',
     title: 'Protección Legal y Representación Jurídica',
     shortDesc: 'Estrategia legal sólida para la representación formal y protección de derechos.',
