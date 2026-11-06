@@ -27,7 +27,9 @@ function spaFallbackPlugin() {
           'derecho-laboral-integral',
           'derecho-condominal',
           'derecho-agrario-regularizacion',
-          'gestion-notarial'
+          'gestion-notarial',
+          'contacto',
+          'firmacambios'
         ];
 
         // Crear carpeta y archivo index.html para cada ruta de servicio
