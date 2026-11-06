@@ -34,7 +34,7 @@ const boardMembers = [
     id: '05',
     name: 'Lic. Jorge Villegas Luna',
     role: 'Especialista en Derecho Penal',
-    bio: 'Especialista en Derecho Penal y Sistema de Justicia Penal con experiencia en el servicio público. Enfocado en la defensa técnica de imputados, asesoría a víctimas, análisis de carpetas de investigación y protección del debido proceso.',
+    bio: 'Especialista en Protección de Derechos y Cumplimiento Normativo con sólida trayectoria en la función pública. Enfocado en la representación legal técnica de partes involucradas, asesoría integral a afectados, análisis de expedientes de gestión y resguardo del debido proceso.',
     image: '/Jorge.jpeg'
   },
   {

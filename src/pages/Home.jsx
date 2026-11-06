@@ -15,9 +15,9 @@ const featuredServices = [
   {
     id: '02',
     category: 'DEFENSA',
-    title: 'Defensa Civil, Familiar y Penal',
-    desc: 'Representación jurídica en convenios, contratos, derecho familiar y procesos penales.',
-    image: '/penal.jpg'
+    title: 'Defensa Civil, Familiar y Legal Integral',
+    desc: 'Representación jurídica en convenios, contratos, derecho familiar y cobertura legal integral.',
+    image: '/pe.jpg'
   },
   {
     id: '03',
@@ -142,7 +142,7 @@ export default function Home() {
                   <div className="w-full h-[1px] bg-gradient-to-r from-white/10 to-transparent"></div>
 
                   <p className="text-lg md:text-2xl font-light leading-relaxed text-gray-400">
-                    Brindamos atención cercana, transparente y personalizada. Identificamos riesgos, tramitamos permisos comerciales y resolvemos asuntos civiles, familiares, patrimoniales y penales con absoluta certeza. Más que trámites aislados, construimos relaciones de confianza para proteger sus derechos en cada etapa.
+                    Brindamos atención cercana, transparente y personalizada. Identificamos riesgos, tramitamos permisos comerciales y brindamos cobertura legal integral en el ámbito civil, familiar y patrimonial con absoluta certeza
                   </p>
 
                   <div className="pt-4">
@@ -171,7 +171,7 @@ export default function Home() {
                   <div className="w-full h-[1px] bg-gradient-to-r from-white/10 to-transparent"></div>
 
                   <p className="text-lg md:text-2xl font-light leading-relaxed text-gray-400">
-                   Nuestra misión es blindar tu patrimonio y resolver controversias administrativas o judiciales con rigor profesional y cercanía, garantizando absoluta certeza jurídica en cada etapa de tu procedimiento.
+                   Nuestra misión es blindar tu patrimonio y resolver controversias administrativas o legales con rigor profesional y cercanía, garantizando absoluta certeza jurídica en cada etapa de tu estrategia.
                   </p>
 
                   <div className="pt-4">

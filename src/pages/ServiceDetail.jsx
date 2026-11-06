@@ -181,40 +181,40 @@ const servicesDatabase = {
       { step: 'Paso 5', title: 'Ejecución y recuperación del adeudo', desc: 'Cuando se obtiene una resolución favorable, promovemos las actuaciones legalmente procedentes para procurar el pago de las cantidades reconocidas y la ejecución sobre bienes susceptibles de embargo.' }
     ]
   },
-  'derecho-penal-defensa': {
+  'proteccion-derechos-defensa': {
     id: '06',
     title: 'Asesoría en Responsabilidad Legal y Protección de Derechos',
     tagline: 'Protegemos tu tranquilidad y representación jurídica con una estrategia legal sólida.',
     heroTitle: ['Protección Legal y', 'Derechos'],
-    image: '/penal.jpeg',
-    intro: 'El servicio consiste en brindar asesoría, representación y orientación en procedimientos ante autoridades correspondientes, tanto para la atención de contingencias legales como para el seguimiento de actuaciones y la protección de derechos patrimoniales o personales.',
-    target: 'En Gestoría Jurídica Abogados analizamos las circunstancias de cada caso, las pruebas disponibles y las disposiciones aplicables para establecer una estrategia de actuación orientada a proteger los intereses de nuestros representados.',
+    image: '/al.jpeg',
+    intro: 'El servicio consiste en brindar asesoría, representación y orientación en gestiones ante las instancias correspondientes, tanto para la atención de contingencias legales como para el seguimiento de actuaciones y la protección de derechos patrimoniales o personales.',
+    target: 'En Gestoría Jurídica Abogados analizamos las circunstancias de cada caso, los antecedentes disponibles y las disposiciones aplicables para establecer una estrategia de actuación orientada a proteger los intereses de nuestros representados.',
     diagnostic: 'Cada asunto requiere un análisis particular para determinar la estrategia adecuada, las actuaciones necesarias y las posibilidades legales reales.',
     gestiones: [
       { title: 'Asesoría y diagnóstico jurídico', desc: 'Análisis de los hechos, revisión de documentos y evaluación de implicaciones legales.' },
       { title: 'Presentación de trámites y solicitudes', desc: 'Orientación y acompañamiento para hacer del conocimiento de la autoridad competente las situaciones pertinentes.' },
-      { title: 'Representación de partes interesadas', desc: 'Seguimiento de diligencias, aportación de elementos de prueba y solicitud de trámites oportunos.' },
-      { title: 'Acompañamiento en investigaciones', desc: 'Asistencia legal a personas representadas, preparación de la estrategia y protección de garantías en las actuaciones.' },
-      { title: 'Audiencias ante autoridades', desc: 'Representación técnica en las comparecencias y audiencias correspondientes.' },
+      { title: 'Representación de partes interesadas', desc: 'Seguimiento de diligencias, aportación de elementos de respaldo y solicitud de trámites oportunos.' },
+      { title: 'Acompañamiento en gestiones y revisiones', desc: 'Asistencia legal a personas representadas, preparación de la estrategia y resguardo de garantías.' },
+      { title: 'Representación técnica presencial', desc: 'Acompañamiento y representación técnica en las comparecencias y reuniones correspondientes.' },
       { title: 'Mecanismos de solución de controversias', desc: 'Evaluación de alternativas legales procedentes y acuerdos conforme a los requisitos de ley.' },
-      { title: 'Impugnaciones y medios de defensa', desc: 'Análisis y promoción de recursos contra resoluciones conforme a la normatividad aplicable.' },
+      { title: 'Impugnaciones y medios de defensa', desc: 'Análisis y promoción de recursos contra determinaciones conforme a la normatividad aplicable.' },
       { title: 'Restablecimiento de derechos', desc: 'Gestión de acciones procedentes para el resguardo e indemnización de derechos afectados.' }
     ],
     benefits: [
-      'Protección de tus derechos fundamentales y debido proceso.',
+      'Protección de tus derechos fundamentales y resguardo de certezas.',
       'Representación legal estratégica conforme a los antecedentes disponibles.',
-      'Acompañamiento integral durante las distintas etapas del procedimiento.',
+      'Acompañamiento integral durante las distintas etapas de tu gestión.',
       'Atención especializada para el seguimiento de actuaciones formales.',
       'Evaluación de alternativas y mecanismos legales viables.'
     ],
     pasos: [
       { step: 'Paso 1', title: 'Asesoría jurídica inicial', desc: 'Escuchamos tu situación y determinamos la estrategia de representación necesaria.' },
-      { step: 'Paso 2', title: 'Análisis de antecedentes', desc: 'Revisamos citatorios, expedientes y documentación para identificar los escenarios legales.' },
+      { step: 'Paso 2', title: 'Análisis de antecedentes', desc: 'Revisamos notificaciones, expedientes y documentación para identificar los escenarios legales.' },
       { step: 'Paso 3', title: 'Definición de la estrategia', desc: 'Establecemos un plan de actuación acorde con tu situación y objetivos.' },
-      { step: 'Paso 4', title: 'Representación y seguimiento', desc: 'Brindamos acompañamiento en las actuaciones correspondientes preparando argumentos y pruebas.' },
-      { step: 'Paso 5', title: 'Seguimiento de resoluciones', desc: 'Analizamos las respuestas emitidas por las autoridades para determinar acciones posteriores.' }
+      { step: 'Paso 4', title: 'Representación y seguimiento', desc: 'Brindamos acompañamiento en las gestiones correspondientes preparando argumentos y elementos de respaldo.' },
+      { step: 'Paso 5', title: 'Seguimiento de determinaciones', desc: 'Analizamos las respuestas emitidas para establecer las acciones posteriores procedentes.' }
     ]
-  },
+},
   'derecho-laboral-integral': {
     id: '07',
     title: 'Defensa Laboral Integral para Trabajadores y Empresas',
