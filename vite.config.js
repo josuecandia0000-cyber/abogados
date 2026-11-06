@@ -20,8 +20,14 @@ function spaFallbackPlugin() {
           'gestion-notarial',
           'licencias-de-alcohol',
           'licencias-de-funcionamiento',
-          'derecho-civil',
-          'derecho-mercantil'
+          'defensa-civil-patrimonial',
+          'derecho-mercantil-cobranza',
+          'derecho-familiar',
+          'proteccion-derechos-defensa',
+          'derecho-laboral-integral',
+          'derecho-condominal',
+          'derecho-agrario-regularizacion',
+          'gestion-notarial'
         ];
 
         // Crear carpeta y archivo index.html para cada ruta de servicio
