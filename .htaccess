@@ -1,5 +1,10 @@
 Options -MultiViews
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+
+# Si el archivo o directorio físico existe en el servidor, cárgalo de forma normal
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# De lo contrario, redirige absolutamente todo al index.html para que React Router tome el control
 RewriteRule ^ index.html [QSA,L]
