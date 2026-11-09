@@ -357,7 +357,7 @@ const servicesDatabase = {
   },
 };
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useParams, useLocation, Link, Navigate } from 'react-router-dom';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Calendar, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
