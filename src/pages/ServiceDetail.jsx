@@ -357,20 +357,15 @@ const servicesDatabase = {
   },
 };
 
-import React, { useState, useRef, useEffect } from 'react';
-import { useParams, useLocation, Link, Navigate } from 'react-router-dom';
-import { motion, useScroll, useTransform, useInView } from 'framer-motion';
-import { Calendar, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
-// Asegúrate de importar tu base de datos de servicios según corresponda
-// import { servicesDatabase } from '../data/servicesDatabase';
+
 
 export default function ServiceDetail() {
-  const { slug: paramSlug } = useParams();
+  const { id } = useParams(); // Recibimos el parámetro :id que configuraste en App.jsx
   const location = useLocation();
   
-  // Determinamos los datos priorizando el parámetro de la ruta, el state, o extrayéndolo directamente de la URL actual del navegador
+  // Determinamos la clave priorizando el id de la URL, el state o extrayéndolo directamente de la ruta actual
   const currentPathSlug = location.pathname.split('/').filter(Boolean).pop();
-  const serviceKey = paramSlug || location.state?.serviceData?.slug || (currentPathSlug !== 'servicios' ? currentPathSlug : 'licencias-de-alcohol');
+  const serviceKey = id || location.state?.serviceData?.slug || (currentPathSlug !== 'servicios' ? currentPathSlug : 'licencias-de-alcohol');
   
   const currentService = servicesDatabase[serviceKey] || servicesDatabase['licencias-de-alcohol'];
 
