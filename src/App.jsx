@@ -29,17 +29,17 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/servicios" element={<Services />} />
-            {/* NUEVA RUTA: El ':id' es dinámico */}
-            <Route path="/servicios/:id" element={<ServiceDetail />} />
+            {/* CORREGIDO: Cambiamos :id por :slug para que coincida con ServiceDetail */}
+            <Route path="/servicios/:slug" element={<ServiceDetail />} />
             <Route path="/firma" element={<About />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
         <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-        <FloatingWhatsApp />
-        <ScrollToTopButton /> 
-      </div>
+          <FloatingWhatsApp />
+          <ScrollToTopButton /> 
+        </div>
       </div>
     </Router>
   );

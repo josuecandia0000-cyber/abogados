@@ -357,12 +357,21 @@ const servicesDatabase = {
   },
 };
 
+import React, { useRef, useState, useEffect } from 'react';
+import { useParams, useLocation, Link, Navigate } from 'react-router-dom';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import { Calendar, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
+// Asegúrate de importar tu base de datos de servicios según corresponda
+// import { servicesDatabase } from '../data/servicesDatabase';
+
 export default function ServiceDetail() {
-  const { slug } = useParams();
+  const { slug: paramSlug } = useParams();
   const location = useLocation();
   
-  // Determinamos los datos priorizando el slug de la URL o el state pasado por la navegación
-  const serviceKey = slug || location.state?.serviceData?.slug || 'licencias-de-alcohol';
+  // Determinamos los datos priorizando el parámetro de la ruta, el state, o extrayéndolo directamente de la URL actual del navegador
+  const currentPathSlug = location.pathname.split('/').filter(Boolean).pop();
+  const serviceKey = paramSlug || location.state?.serviceData?.slug || (currentPathSlug !== 'servicios' ? currentPathSlug : 'licencias-de-alcohol');
+  
   const currentService = servicesDatabase[serviceKey] || servicesDatabase['licencias-de-alcohol'];
 
   const [openGestion, setOpenGestion] = useState(null);
